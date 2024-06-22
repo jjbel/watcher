@@ -1,0 +1,10 @@
+#!/bin/bash
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+electron $SCRIPT_DIR &
+
+sleep 1
+echo "Positioning Window..."
+
+# gravity ,x,y,w,h
+wmctrl -r WatcherApp -e '0,1100,0,-1,-1'
+echo "Done"

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>WatcherApp</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* width: 100vw;
+            height: 100vh; */
+
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            overflow: hidden;
+
+            font-family: "Source Code Pro", monospace;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: right;
+
+            background-color: #161925;
+            /* background-color: red; */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col />
+            <col style="width: 8em;" />
+        </colgroup>
+
+        <tr>
+            <td>Download</td>
+            <td>100.13MiB/s</td>
+        </tr>
+
+        Current value: <strong id="counter">0</strong>
+
+        <!-- <tr>
+            <td>Upload</td>
+            <td>1MiB/s</td>
+        </tr> -->
+
+        <!-- cat /proc/meminfo -->
+    </table>
+</body>
+
+<script src="./renderer.js"></script>
+
+</html>

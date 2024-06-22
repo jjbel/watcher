@@ -1,0 +1,8 @@
+{
+    "name": "watcher",
+    "version": "1.0.0",
+    "description": "Watch net and disk usage",
+    "main": "main.js",
+    "author": "",
+    "license": "MIT"
+}
